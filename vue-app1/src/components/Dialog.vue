@@ -16,20 +16,20 @@
 
 </template>
 <script>
-  export default {
-    data() {
-      return {
-        dialogVisible: false
-      };
+export default {
+  data() {
+    return {
+      dialogVisible: false,
+    };
+  },
+  methods: {
+    handleClose(done) {
+      this.$confirm('确认关闭？')
+        .then(() => {
+          done();
+        })
+        .catch(() => {});
     },
-    methods: {
-      handleClose(done) {
-        this.$confirm('确认关闭？')
-          .then(_ => {
-            done();
-          })
-          .catch(_ => {});
-      }
-    }
-  };
+  },
+};
 </script>

@@ -2,20 +2,25 @@
 # yarn lockfile v1
 
 
-"@apps/react-app1@^0.1.6":
-  version "0.1.6"
-  resolved "http://localhost:4873/@apps%2freact-app1/-/react-app1-0.1.6.tgz#fcc9903df96961cdccc61f7e1909f320bf0060f1"
-  integrity sha512-8kDDpqpAqxbhs+Mm+zgQH8GTWEB9i0oPxKKuf7GUe7VvG/AlorwdfBmGLXgCGk77WdkBy5bdNmeVc9U/IJkJ4w==
+"@apps/react-app1@^0.1.8":
+  version "0.1.8"
+  resolved "http://127.0.0.1:4873/@apps%2freact-app1/-/react-app1-0.1.8.tgz#960e8a4cf9728739e27c1626a6a2517f5764e83b"
+  integrity sha512-H4uAzSbwPSMWAJtGU2R8sbBQ/ERrVoM5FfNvVstuG0j+upl30WyYRRE+16sW1TStccTt9kdyURV+GGLGlF7/4g==
 
-"@apps/vue-app1@^1.0.6":
-  version "1.0.6"
-  resolved "http://127.0.0.1:4873/@apps%2fvue-app1/-/vue-app1-1.0.6.tgz#6eda070750f4e9b2ba6327645669f8feb16b646e"
-  integrity sha512-XQQy4JHFoyd9kpZa0mLA+Y8XoGazCiJps3RBLpNpXY5rxM/yhnvnsFg136CMeHE72Z3Njb4BJ/V6NsD645uAAQ==
+"@apps/vue-app1@^1.0.8":
+  version "1.0.8"
+  resolved "http://127.0.0.1:4873/@apps%2fvue-app1/-/vue-app1-1.0.8.tgz#e72bde7f43db018cd4d0a6bfa9daadfc7196721e"
+  integrity sha512-THJecXQuMi8k8i900sEuXRt5nPcsBNyviwCgSM/HaRWAOwtPOYGraANIhKFdr02z+xFgbEeoMQN+jcp1Ca2DOA==
+  dependencies:
+    normalize.css "^8.0.1"
 
-"@apps/vue-app2@^0.1.13":
-  version "0.1.13"
-  resolved "http://127.0.0.1:4873/@apps%2fvue-app2/-/vue-app2-0.1.13.tgz#f19a23bcfd04afcf57b2b13ba7c50ac06456db38"
-  integrity sha512-/gFHyT+LwiSYiE8YjndRE7xl91OBMtpP5tf/T9zuSqJa4QXMRzevDeA/MucanHFho0olpju1A4k8kjZE3yQGig==
+"@apps/vue-app2@^0.1.17":
+  version "0.1.17"
+  resolved "http://127.0.0.1:4873/@apps%2fvue-app2/-/vue-app2-0.1.17.tgz#573c0e786c44499a79e641743d3b9c182fc2aee8"
+  integrity sha512-ywUPJd3OAWxgKtoayLN4FtgNQzddJmaQumJ63/cyN5IcIPjdQs6aGNKMYkUOsglYWzxSU4AWVCF3Hwm7WKLw2w==
+  dependencies:
+    element-ui "^2.12.0"
+    normalize.css "^8.0.1"
 
 "@babel/code-frame@^7.0.0", "@babel/code-frame@^7.0.0-beta.35", "@babel/code-frame@^7.5.5":
   version "7.5.5"
@@ -3377,7 +3382,7 @@ electron-to-chromium@^1.3.247:
   resolved "https://registry.npm.taobao.org/electron-to-chromium/download/electron-to-chromium-1.3.280.tgz#5f8950c8329e3e11b59c705fd59b4b8d9b3de5b9"
   integrity sha1-X4lQyDKePhG1nHBf1ZtLjZs95bk=
 
-element-ui@@2.12.0:
+element-ui@^2.12.0:
   version "2.12.0"
   resolved "https://registry.yarnpkg.com/element-ui/-/element-ui-2.12.0.tgz#a893bc11ae4f7dbb7e9d541606f23e643f131ee4"
   integrity sha512-DapyT0PW4i/1ETPHk8K8Qbe8B6hj10+dXsRTrOTFryV9wAs6e9mCxbV65awokyR2/v/KuIHJmqX+mH3wUa4rOQ==

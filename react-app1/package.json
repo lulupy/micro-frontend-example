@@ -1,6 +1,6 @@
 {
   "name": "@apps/react-app1",
-  "version": "0.1.6",
+  "version": "0.1.8",
   "files": ["*"],
   "devDependencies": {
     "@babel/core": "7.6.0",
@@ -67,7 +67,7 @@
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js",
-    "publish-sciprt": "PUBLIC_URL=/apps/react-app1 yarn build && cp package.json build/ && yarn publish build"
+    "publish-script": "PUBLIC_URL=/apps/react-app1 yarn build && cp package.json build/ && yarn publish build"
   },
   "eslintConfig": {
     "extends": "react-app"

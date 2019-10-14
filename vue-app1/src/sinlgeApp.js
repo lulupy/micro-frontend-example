@@ -1,16 +1,18 @@
-import Vue from 'vue'
-import App from './App.vue'
-import router from './router'
-import singleSpaVue from 'single-spa-vue'
+import Vue from 'vue';
+import singleSpaVue from 'single-spa-vue';
+// import App from './App.vue';
+import router from './router';
+
+const App = () => import('./App.vue');
 
 const vueLifecycles = singleSpaVue({
   Vue,
   appOptions: {
     render: h => h(App),
-    router
-  }
-})
+    router,
+  },
+});
 
-export const bootstrap = vueLifecycles.bootstrap
-export const mount = vueLifecycles.mount
-export const unmount = vueLifecycles.unmount 
+export const { bootstrap } = vueLifecycles;
+export const { mount } = vueLifecycles;
+export const { unmount } = vueLifecycles;

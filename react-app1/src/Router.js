@@ -6,12 +6,16 @@ import {
   NavLink,
 } from "react-router-dom";
 import loadable from '@loadable/component';
-import { Spin } from 'antd';
+import { Spin, Menu } from 'antd';
+import "antd/es/spin/style/css";
+import "antd/es/menu/style/css";
 
-const Home = loadable(() => import('./pages/Home'), {
+
+const Page1 = loadable(() => import('./pages/Page1'), {
   fallback: <Spin />,
 });
-const About = loadable(() => import('./pages/About'), {
+
+const Page2 = loadable(() => import('./pages/Page2'), {
   fallback: <Spin />,
 });
 
@@ -21,13 +25,17 @@ const RouterComponent = () => (
     <Route
       render={({ location }) => (
         <div>
-          <ul>
-            <NavLink to="/">Home</NavLink>
-            <NavLink to="/about">About</NavLink>
-          </ul>
+          <Menu mode="horizontal">
+            <Menu.Item>
+              <NavLink to="/">页面1</NavLink>
+            </Menu.Item>
+            <Menu.Item>
+            <NavLink to="/Page2">页面2</NavLink>
+            </Menu.Item>
+          </Menu>
           <Switch location={location}>
-            <Route exact path="/" component={Home} />
-            <Route exact path="/about" component={About} />
+            <Route exact path="/" component={Page1} />
+            <Route exact path="/page2" component={Page2} />
           </Switch>
         </div>
       )}

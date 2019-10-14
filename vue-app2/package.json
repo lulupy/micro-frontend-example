@@ -1,12 +1,14 @@
 {
   "name": "@apps/vue-app2",
-  "version": "0.1.13",
-  "files": ["*"],
+  "version": "0.1.17",
+  "files": [
+    "*"
+  ],
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "publish-sciprt": "yarn build && cp package.json dist/ && yarn publish dist",
+    "publish-script": "yarn build && cp package.json dist/ && yarn publish dist",
     "test:unit": "vue-cli-service test:unit"
   },
   "devDependencies": {
@@ -94,5 +96,9 @@
       "jest-watch-typeahead/filename",
       "jest-watch-typeahead/testname"
     ]
+  },
+  "dependencies": {
+    "element-ui": "^2.12.0",
+    "normalize.css": "^8.0.1"
   }
 }

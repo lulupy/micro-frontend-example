@@ -1,5 +1,6 @@
 import Vue from 'vue';
 import Router from 'vue-router';
+import Page1 from './views/Page1.vue';
 
 Vue.use(Router);
 
@@ -10,7 +11,7 @@ export default new Router({
     {
       path: '/',
       name: 'page1',
-      component: () => import(/* webpackChunkName: "page1" */ './views/Page1.vue'),
+      component: Page1,
     },
     {
       path: '/page2',
