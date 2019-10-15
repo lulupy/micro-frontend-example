@@ -14,10 +14,10 @@
   dependencies:
     normalize.css "^8.0.1"
 
-"@apps/vue-app2@^0.1.17":
-  version "0.1.17"
-  resolved "http://127.0.0.1:4873/@apps%2fvue-app2/-/vue-app2-0.1.17.tgz#573c0e786c44499a79e641743d3b9c182fc2aee8"
-  integrity sha512-ywUPJd3OAWxgKtoayLN4FtgNQzddJmaQumJ63/cyN5IcIPjdQs6aGNKMYkUOsglYWzxSU4AWVCF3Hwm7WKLw2w==
+"@apps/vue-app2@^0.1.20":
+  version "0.1.20"
+  resolved "http://127.0.0.1:4873/@apps%2fvue-app2/-/vue-app2-0.1.20.tgz#e0404c41a43ba2653e334455f9e20a48ffd21f95"
+  integrity sha512-GCxxHBbSCgsKdfmEYoYsAkkQs+jU87LD/Srj2IPS9bzw4TlwkeIV7xjJz97V3s/J+BdXSb/6DzWFKASNFSEwAw==
   dependencies:
     element-ui "^2.12.0"
     normalize.css "^8.0.1"

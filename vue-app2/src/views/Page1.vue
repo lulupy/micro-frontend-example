@@ -2,10 +2,17 @@
   <div :class="$style.root">
     <h1 :class="$style.title">页面1</h1>
     <img :class="$style.img" alt="Vue logo" src="../assets/logo.png">
+    <MessageBox />
   </div>
 </template>
 <script>
-export default {};
+import MessageBox from '../components/MessageBox.vue';
+
+export default {
+  components: {
+    MessageBox,
+  },
+};
 </script>
 <style module>
 .root{
