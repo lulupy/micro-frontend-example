@@ -10,7 +10,7 @@ module.exports = {
     ],
   },
   devServer: {
-    historyApiFallback: false,
+    // historyApiFallback: false,
     // 在开发模式下如果不将node_modules/@apps拷贝到dist/apps, 还可以使用如下server代理的方法
     // contentBase: './',
     // proxy: {

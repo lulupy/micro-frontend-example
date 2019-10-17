@@ -14,7 +14,7 @@
 <script>
 import Vue from 'vue';
 import ElementUI from 'element-ui';
-import './App.css';
+
 
 if (process.env.NODE_ENV === 'development') {
   // eslint-disable-next-line

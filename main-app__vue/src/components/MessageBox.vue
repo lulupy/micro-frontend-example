@@ -1,14 +1,22 @@
 <template>
   <div>
     <el-button v-on:click="handleSendToVueApp2()">主应用发起通知, 子应用监听并处理</el-button>
-    <div>{{message}}</div>
+    <el-alert
+      style="margin-top: 5px"
+      :key="i"
+      v-for="(m, i) in messages"
+      :title="m"
+      type="success"
+    >
+    </el-alert>
   </div>
 </template>
 <script>
+
 export default {
   data() {
     return {
-      message: '',
+      messages: [],
     };
   },
   methods: {
@@ -19,14 +27,14 @@ export default {
       }));
     },
     handleReceiveMessageFromVueApp2(event) {
-      this.message = event.detail.message;
+      this.messages.push(event.detail.message);
     },
   },
   mounted() {
-    window.addEventListener('vue-app2:page1:click', this.handleReceiveMessageFromVueApp2);
+    window.addEventListener('vue-app2:notify', this.handleReceiveMessageFromVueApp2);
   },
   beforeDestroy() {
-    window.removeEventListener('vue-app2:page1:click', this.handleVueApp2);
+    window.removeEventListener('vue-app2:notify', this.handleVueApp2);
   },
 };
 </script>

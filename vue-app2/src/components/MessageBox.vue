@@ -1,19 +1,25 @@
 <template>
   <div>
     <el-button v-on:click="handleClick()">通知父应用</el-button>
-    <div>{{message}}</div>
+    <el-alert
+      style="margin-top: 5px"
+      :key="i"
+      v-for="(m, i) in messages"
+      :title="m"
+      type="success"
+    >
   </div>
 </template>
 <script>
 export default {
   data() {
     return {
-      message: '',
+      messages: [],
     };
   },
   methods: {
     handleClick() {
-      dispatchEvent(new CustomEvent('vue-app2:page1:click', {
+      dispatchEvent(new CustomEvent('vue-app2:notify', {
         bubbles: true,
         detail: {
           message: '来自vue-app2的消息',
@@ -21,8 +27,8 @@ export default {
       }));
     },
     handleReceiveMessage(event) {
+      this.messages.push(event.detail);
       console.log('receive message from root app in vue app2');
-      this.message = event.detail;
     },
   },
   mounted() {

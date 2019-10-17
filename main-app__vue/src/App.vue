@@ -55,8 +55,9 @@ export default {
   flex-grow: 1;
 }
 .messageBox{
-  height: 100px;
+  height: 300px;
   box-sizing: border-box;
   border: 10px solid #367;
+  overflow: auto;
 }
 </style>
